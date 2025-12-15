@@ -44,10 +44,16 @@ git clone --recursive https://github.com/Start9Labs/start-os.git
 
 ### 6. StartOS SDK Build Instructions for Packaging  
 
-The JSON processor jq is required. Install it inside your WSL2 environment:  
+Install these inside your WSL2 environment:  
 
+Check for apt updates first
 sudo apt update  
-sudo apt install -y jq  
+
+Install json processor jq
+sudo apt install -y jq   
+
+Install the Deno runtime — a secure, modern alternative to Node.js for running JavaScript and TypeScript
+sudo snap install deno  
 
 cd start-os  
 make sdk  
