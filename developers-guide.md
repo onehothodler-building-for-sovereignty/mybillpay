@@ -38,9 +38,9 @@ sudo usermod -aG docker $USER
 ---  
 ### 5. Install StartOS SDK
 
-** git clone https://github.com/Start9Labs/start-os.git && \  
-** cd start-os && git submodule update --init --recursive && \  
-** make sdk 
+git clone https://github.com/Start9Labs/start-os.git && \  
+cd start-os && git submodule update --init --recursive && \  
+make sdk 
 ---  
 
 ### 6. StartOS SDK Build Instructions for Packaging  
