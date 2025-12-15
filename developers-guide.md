@@ -46,13 +46,13 @@ git clone --recursive https://github.com/Start9Labs/start-os.git
 
 Install these inside your WSL2 environment:  
 
-Check for apt updates first
+Check for apt updates first  
 sudo apt update  
 
-Install json processor jq
+Install json processor jq  
 sudo apt install -y jq   
 
-Install the Deno runtime — a secure, modern alternative to Node.js for running JavaScript and TypeScript
+Install the Deno runtime — a secure, modern alternative to Node.js for running JavaScript and TypeScript  
 sudo snap install deno  
 
 cd start-os  
