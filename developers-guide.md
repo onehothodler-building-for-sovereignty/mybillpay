@@ -1,6 +1,6 @@
 # Bitcoin Bill Payment Module Development Guide (StartOS + WSL2)  
 
-This document provides a full setup and development guid for building a Bitcoin Bill Payment module on StartOS using a Windows machine with WSL2.
+This document provides a full setup and development guide for building a Bitcoin Bill Payment module on StartOS using a Windows machine with WSL2.
 
 ---
 
