@@ -1,46 +1,47 @@
 # Bitcoin Bill Payment Module Development Guide (StartOS + WSL2)  
 
-This document provides a full setup and development guide for building a Bitcoin Bill Payment module on StartOS using a Windows machine with WSL2.
+This document provides a full setup and development guide for building a Bitcoin Bill Payment module on StartOS using a Windows machine with WSL2.  
 
----
+---  
 
 ## Post‑Install Checklist (WSL2 + StartOS Dev Environment)  
 
 ### 1. Update & Upgrade Linux  
 
-sudo apt update && sudo apt upgrade -y
+sudo apt update && sudo apt upgrade -y  
 
----
+---  
 
 ### 2. Install Rust Toolchain  
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh  
-rustc --version
+rustc --version  
 
----
+---  
 ### 3. Install Node.js & npm/yarn  
 
 sudo apt install -y nodejs npm  
-npm install --global yarn
+npm install --global yarn  
 
----
+---  
 
 ### 4. Install Docker (WSL2 Integration)  
 
-When using Docker Desktop with WSL2
-• Make sure Docker Desktop is installed on Windows.
-• In Docker Desktop settings, enable WSL2 integration for your Ubuntu distro.
-• Restart Docker Desktop and WSL2.
+When using Docker Desktop with WSL2 
+• Make sure Docker Desktop is installed on Windows.  
+• In Docker Desktop settings, enable WSL2 integration for your Ubuntu distro.  
+• Restart Docker Desktop and WSL2.  
 
 sudo apt install -y docker.io  
-sudo service docker start  
-sudo usermod -aG docker $USER
+sudo service docker start    
+sudo usermod -aG docker $USER  
 
----
+---  
 ### 5. Install StartOS SDK  
 
-git clone --recursive https://github.com/Start9Labs/start-os.git  
-
----
+git clone https://github.com/Start9Labs/start-os.git && \  
+cd start-os && git submodule update --init --recursive && \  
+make sdk  
+---  
 
 ### 6. StartOS SDK Build Instructions for Packaging  
 
