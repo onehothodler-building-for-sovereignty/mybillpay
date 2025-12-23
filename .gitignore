@@ -1,0 +1,7 @@
+/target/
+frontend/target/
+.DS_Store
+# Ignore editor/temp files
+*.swp
+*.swo
+*~
